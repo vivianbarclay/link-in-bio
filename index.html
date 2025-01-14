@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
 
     <style>
 
       body {
         background: turquoise;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 30px;
       }
 
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+        border-style: solid;
+        border-color: whitesmoke;
+        border-width: 10px;
+        padding: 20px;
+      }
 
+      .image-row {
+        border-style: dotted;
+        border-color: aliceblue;
+        border-width: 10px;
+        margin: 20px auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+      }
+
+      .profile-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        margin: 20px auto;
+       }
+
+       .name-row {
+        font-family: cursive;
+        font-size: xx-large;
+        color: azure;
+        border-style: double;
+        border-color: azure;
+        border-width: 10px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+
+      
 
     </style>
 
@@ -18,7 +62,14 @@
 
   <body>
     <div class="main-container">
+      <div class="image-row">
+        <img src="App Dev_AI Profile Picture.webp" alt="Blonde girl smiling" class="profile-image">
+      </div>
       
+      <div class="name-row">
+        Vivian Barclay
+      </div>
+
     </div>
   </body>
 </html>
