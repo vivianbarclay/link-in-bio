@@ -3,14 +3,23 @@
   <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
 
     <style>
 
+      html {
+        min-height: 100%;
+      }
+
       body {
-        background: turquoise;
+        background: linear-gradient(180deg, #003f5b, #26586f, #447383, #628e98, #83a9ae, #a4c6c6, #c7e2df, #ebfffa);
         padding-top: 40px;
         padding-bottom: 40px;
         margin: 30px;
+        min-height: 100%;
       }
 
       .main-container {
@@ -30,9 +39,11 @@
         display: flex;
         justify-content: center;
         align-items: center; 
+        margin-bottom: 20px;
+        text-align: center;
       }
 
-      .profile-image {
+      .avatar-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
@@ -44,13 +55,14 @@
        }
 
        .name-row {
-        font-family: cursive;
-        font-size: 35px;
+        font-family: 'Trebuchet MS';
+        font-size: 38px;
         color: azure;
         /*border-style: double;
         border-color: azure;
         border-width: 10px;*/
         margin: 20px auto;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,14 +72,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
-       }
-
-       .social-icon {
-        width: 32px;
-        height: 32px;
-        object-fit: contain;
-        display: inline-block;
+        margin-bottom: 30px;
        }
 
        .link-rows {
@@ -81,6 +86,9 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        background-color: rgba(158, 199, 236, 0.39);
+        border-radius: 200px;
+        margin-bottom: 20px;
        }
 
        .thumbnail {
@@ -96,7 +104,8 @@
         font-family: Tahoma;
         font-size: 18px;
         text-decoration: none;
-        color: azure;
+        color: #003f5b;
+        flex-grow: 1;
        }
       
 
@@ -110,7 +119,7 @@
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="App Dev_AI Profile Picture.webp" alt="Blonde girl <smiling" class="profile-image">
+        <img src="App Dev_AI Profile Picture.webp" alt="Blonde girl <smiling" class="avatar-image">
       </div>
       
       <div class="name-row">
@@ -118,9 +127,9 @@
       </div>
 
       <div class="social-icons-row">
-        <a href="https://www.instagram.com/vivibarclay4/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon"></a>
-        <a href="https://www.linkedin.com/in/vivian-barclay/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="social-icon"></a>
-        <a href="https://www.tiktok.com/@vivianmbarclay?lang=en" target="_blank"><img src="TikTok Logo.png" alt="TikTok Logo" class="social-icon"></a>
+        <a href="https://www.instagram.com/vivibarclay4/" target="_blank"><i class="fa-brands fa-instagram" style="color: whitesmoke; width: 25px; height: 25px;"></i></a>
+        <a href="https://www.linkedin.com/in/vivian-barclay/" target="_blank"><i class="fa-brands fa-linkedin" style="color: whitesmoke; width: 25px; height: 25px;"></i></a>
+        <a href="https://www.tiktok.com/@vivianmbarclay?lang=en" target="_blank"><i class="fa-brands fa-tiktok" style="color: whitesmoke; width: 25px; height: 25px;"></i></a>
 
       </div>
 
