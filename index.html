@@ -23,9 +23,9 @@
       }
 
       .image-row {
-        border-style: dotted;
+       /* border-style: dotted;
         border-color: aliceblue;
-        border-width: 10px;
+        border-width: 10px;*/
         margin: 20px auto; 
         display: flex;
         justify-content: center;
@@ -38,20 +38,67 @@
         object-fit: cover;
         border-radius: 128px;
         margin: 20px auto;
+        border-style: dotted;
+        border-color: aliceblue;
+        border-width: 10px;
        }
 
        .name-row {
         font-family: cursive;
-        font-size: xx-large;
+        font-size: 35px;
         color: azure;
-        border-style: double;
+        /*border-style: double;
         border-color: azure;
-        border-width: 10px;
+        border-width: 10px;*/
         margin: 20px auto;
         display: flex;
         justify-content: center;
         align-items: center;
        }
+
+       .social-icons-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+       }
+
+       .social-icon {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;
+       }
+
+       .link-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 25px;
+       }
+
+       .link-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+       }
+
+       .thumbnail {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: center;
+
+       }
+
+       .link-text {
+        font-family: Tahoma;
+        font-size: 18px;
+        text-decoration: none;
+        color: azure;
+       }
+      
 
 
       
@@ -63,13 +110,44 @@
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="App Dev_AI Profile Picture.webp" alt="Blonde girl smiling" class="profile-image">
+        <img src="App Dev_AI Profile Picture.webp" alt="Blonde girl <smiling" class="profile-image">
       </div>
       
       <div class="name-row">
         Vivian Barclay
       </div>
 
+      <div class="social-icons-row">
+        <a href="https://www.instagram.com/vivibarclay4/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/vivian-barclay/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="social-icon"></a>
+        <a href="https://www.tiktok.com/@vivianmbarclay?lang=en" target="_blank"><img src="TikTok Logo.png" alt="TikTok Logo" class="social-icon"></a>
+
+      </div>
+
+      <div class="link-rows">
+       
+        <div class="link-item">
+         
+          <img src="Chocolate Chip Cookies.jpg" alt="chocolate chip cookies" class="thumbnail">
+          <a class="link-text" href="https://easygayoven.com/best-ever-chocolate-chip-cookies/" target="_blank">Vivian's favorite chocolate chip cookie recipe: easygayoven - <em>Best-Ever Chocolate Chip Cookies</em></a>
+     
+        </div>
+
+        <div class="link-item">
+          
+          <img src="sourdough.jpg" alt="a piece of sourdough bread" class="thumbnail">
+          <a class="link-text" href="https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/" target="_blank">Vivian's favorite sourdough recipe: Aledandra's Kitchen - <em>Homemade Sourdough Bread, Step by Step</em></a>
+
+        </div>
+
+        <div class="link-item">
+          
+          <img src="Crochet.jpg" alt="gray crocheted yarn" class="thumbnail">
+          <a class="link-text" href="https://www.pinterest.com/nerdymammablog/crochet-projects/" target="_blank">Fun crochet ideas on Pinterest</a>
+        </div>
+      
+      </div> 
+ 
     </div>
   </body>
 </html>
